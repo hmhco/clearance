@@ -28,9 +28,9 @@ module Clearance
     #
     # @return [User, nil]
     def current_user
-      if remember_token.present?
-        @current_user ||= user_from_remember_token(remember_token)
-      end
+      # if remember_token.present?
+      #   @current_user ||= user_from_remember_token(remember_token)
+      # end
 
       @current_user
     end
